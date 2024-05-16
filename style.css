@@ -5,6 +5,19 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+/* Mobile view */
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url('mobile-background-image.jpg'); /* Replace 'mobile-background-image.jpg' with your mobile background image */
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('desktop-background-image.jpg'); /* Replace 'desktop-background-image.jpg' with your desktop background image */
+  }
+}
 body{
   min-height:100vh;
   align-items: center;
