@@ -5,19 +5,6 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-/* Mobile view */
-@media screen and (max-width: 767px) {
-  body {
-    background-image: url('https://i.pinimg.com/originals/6f/7f/95/6f7f9565a3ed90396101886c73c20e65.gif'); /* Replace 'mobile-background-image.jpg' with your mobile background image */
-  }
-}
-
-/* Desktop view */
-@media screen and (min-width: 768px) {
-  body {
-    background-image: url('https://i.makeagif.com/media/11-05-2021/SCJjZ2.gif'); /* Replace 'desktop-background-image.jpg' with your desktop background image */
-  }
-}
 body{
   min-height:100vh;
   align-items: center;
