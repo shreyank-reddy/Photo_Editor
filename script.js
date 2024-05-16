@@ -114,3 +114,26 @@ downloadImageBtn.addEventListener("click",downloadImage);
 filterSlider.addEventListener("input", updateFilter);
 fileInput.addEventListener("change", loadImage);
 chooseImgBtn.addEventListener("click", () => fileInput.click());
+
+// Function to set background image based on window width
+function setBackground() {
+    const windowWidth = window.innerWidth;
+  
+    // Get the body element
+    const body = document.querySelector('body');
+  
+    // Set background images based on window width
+    if (windowWidth < 1100) {
+      body.style.backgroundImage = "url('https://i.pinimg.com/originals/6f/7f/95/6f7f9565a3ed90396101886c73c20e65.gif')"; // Set mobile background image
+}else {
+      body.style.backgroundImage = "url('https://i.makeagif.com/media/11-05-2021/SCJjZ2.gif')"; // Set desktop background image
+    }
+  }
+  
+  // Call setBackground function initially to set background based on initial window width
+  setBackground();
+  
+  // Add event listener for window resize event
+  window.addEventListener('resize', setBackground);
+  
+
